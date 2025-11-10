@@ -9,6 +9,7 @@ header#cabecera {
     position: fixed;
     top: 0;
     width: 100%;
+    backdrop-filter:blur(5px);
 
     div.logotipo-cabecera {
         display: flex;
