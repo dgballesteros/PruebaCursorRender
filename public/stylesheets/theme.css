@@ -1,0 +1,8 @@
+:root {
+    --main-background-color: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --main-details-background-color: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --purpura-principal: #667eea;
+    --purpura-oscuro: #764ba2;
+    --rosa-vibrante: #f093fb;
+    --rosa-intenso: #f093fb;
+};
