@@ -1,11 +1,14 @@
 header#cabecera {
 
-    height: 17vh;
+    height: 18vh;
     color: white;
-    background-color:rgba(33, 7, 58, 0.24);
+    background-color:rgba(0, 0, 0, 0.301);
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     div.logotipo-cabecera {
         display: flex;
@@ -14,7 +17,7 @@ header#cabecera {
         gap: 20px;
     
         span.logo {
-            font-size: 2rem;
+            font-size: 32px;
             padding: 12px;
             background: var(--main-details-background-color);
             border-radius: 17px;
@@ -28,12 +31,20 @@ header#cabecera {
 
     nav.menu-principal {
         display: flex;
-        gap: 70px;
+        gap: 60px;
 
         a {
+            border-radius: 12px;
+            padding: 12px 14px;
             font-size: 1.1rem;
             color: white;
             text-decoration: none;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        
+        a:hover {
+            transform: translateY(-2px);
+            background: var(--hover-menu);
         }
     }
 

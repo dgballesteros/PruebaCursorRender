@@ -1,0 +1,22 @@
+footer#footer {
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.527);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        color: white;
+        font-weight: 400;
+        font-size: 1.1rem;
+
+        span.correo {
+            cursor: pointer;
+            color: var(--rosa-intenso);
+        }
+
+        span.correo:hover{
+            color: #e600ff;
+        }
+    }
+}
