@@ -1,4 +1,5 @@
 div.contenedor-off-canvas{
+
     height: 100%;
     width: 500px;
     backdrop-filter: blur(5px);
@@ -6,13 +7,26 @@ div.contenedor-off-canvas{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 0; /* Para pegarlo a la parte superior */  
-    right: 0; /* Para pegarlo al borde derecho */
+    position: fixed;
+    top: 0px; /* Para pegarlo a la parte superior */   
+    right: -500px;
+    transition: 0.5s ease;
 
-    h1 {
-        align-self: flex-start;
+    div.cabecera-off-canvas {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            align-self: flex-start;
+        }
+
+        img.cerrar-menu{
+            cursor: pointer;
+        }
     }
+    
 
     div.contenedor-tarjetas-off-canvas {
 
@@ -50,4 +64,8 @@ div.contenedor-off-canvas{
             background-color: rgb(103, 89, 112);
         }
     }
+}
+
+div.contenedor-off-canvas.visible{
+    right: 0px;
 }

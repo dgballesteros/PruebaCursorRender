@@ -4,11 +4,11 @@
 @import "footer.css";
 @import "off-canvas.css";
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 18vh;
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
   font-size: 16px;
   margin: 0;
   box-sizing: border-box;
   background: var(--main-background-color);
+  overflow-x: hidden; /* Para que no se habilite el scroll horizontal si hay algo fuera de la pantalla*/
 }
